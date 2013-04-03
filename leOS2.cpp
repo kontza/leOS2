@@ -225,21 +225,6 @@ uint32_t leOS2::convertMs(uint32_t tempMs) {
     }
 }
 
-// Put scheduler on hold.
-void leOS2::pauseScheduler() {
-    wdt_disable();
-}
-
- // Restart the scheduler.
-void leOS2::restartScheduler() {
-    if(!_initialized) {
-        begin();
-    } else {
-        setWDT();
-    }
-}
-
-
 //reset the MCU
 void leOS2::reset(void) {
     wdt_disable();

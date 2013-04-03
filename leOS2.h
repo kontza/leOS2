@@ -80,8 +80,6 @@ class leOS2 {
         void haltScheduler(void);
 		void restartScheduler(void);
         void reset(void);
-        void pauseScheduler();
-        void restartScheduler();
 	private:
         //private methods
         void setWDT();
